@@ -1,0 +1,5 @@
+outs:
+- md5: 8c1f356f47769c32dff590c489e23679
+  size: 1208088860
+  hash: md5
+  path: military-aircraft-recognition-dataset.zip
