@@ -162,4 +162,5 @@ cython_debug/
 # added by myself
 kaggle.json
 military-aircraft-recognition-dataset.zip
-dataset/
+dataset/*
+!dataset/*.dvc
