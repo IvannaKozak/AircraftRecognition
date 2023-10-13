@@ -50,5 +50,3 @@ print("\nTypes Distribution:")
 for obj_type, count in types_count.items():
     print(f"{obj_type}: {count}")
 
-# For data visualization and further statistical information, 
-# you can extend the above code, and integrate visualization libraries like matplotlib.
