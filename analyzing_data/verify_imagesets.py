@@ -1,7 +1,7 @@
-with open("dataset/ImageSets/Main/train.txt", "r") as f:
+with open("preparing_data/new_train.txt", "r") as f:
     train_images = set(f.readlines())
 
-with open("dataset/ImageSets/Main/test.txt", "r") as f:
+with open("preparing_data/new_test.txt", "r") as f:
     test_images = set(f.readlines())
 
 overlap = train_images.intersection(test_images)

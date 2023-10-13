@@ -1,4 +1,4 @@
-import random
+from sklearn.model_selection import train_test_split
 
 TRAIN_SET = "dataset/ImageSets/Main/train.txt"
 TEST_SET = "dataset/ImageSets/Main/test.txt"
@@ -13,13 +13,8 @@ with open(TEST_SET, 'r') as f:
 # Combine current train and test sets
 all_images = train_images + test_images
 
-# Shuffle the combined list
-random.shuffle(all_images)
-
-# Split into training and test sets (using an 80-20 split)
-split_index = int(0.8 * len(all_images))
-new_train_images = all_images[:split_index]
-new_test_images = all_images[split_index:]
+# Split into training and test sets using scikit-learn (80-20 split)
+new_train_images, new_test_images = train_test_split(all_images, test_size=0.2, random_state=42)
 
 print(f"Number of New Training Images: {len(new_train_images)}")
 print(f"Number of New Test Images: {len(new_test_images)}")
@@ -37,6 +32,4 @@ with open(NEW_TEST_SET, 'w') as f:
     for img in new_test_images:
         f.write(f"{img}\n")
 
-print("Created new_train.txt and new_test.txt with the new split.")
-
-
+print("Created new_train.txt and new_test.txt with the new split using scikit-learn.")

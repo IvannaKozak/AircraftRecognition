@@ -4,8 +4,8 @@ import xml.etree.ElementTree as ET
 # Paths
 ANNOTATIONS_PATH = "dataset/Annotations/Oriented Bounding Boxes/"
 IMAGES_PATH = "dataset/JPEGImages/"
-TRAIN_SET = "dataset/ImageSets/Main/train.txt"
-TEST_SET = "dataset/ImageSets/Main/test.txt"
+TRAIN_SET = "preparing_data/new_train.txt"
+TEST_SET = "preparing_data/new_test.txt"
 
 # Load train and test sets
 with open(TRAIN_SET, 'r') as f:
