@@ -163,3 +163,4 @@ cython_debug/
 kaggle.json
 military-aircraft-recognition-dataset.zip
 dataset/
+yolov5/
