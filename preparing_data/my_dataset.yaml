@@ -1,0 +1,27 @@
+# Dataset path, training and validation data files relative to 'path'
+path: ../dataset  # path to your dataset root directory, assuming the 'yolov5' folder is at the same directory level as 'dataset'
+train: ../preparing_data/modified_train.txt  # path to training data, since the file is outside the 'dataset' directory, we navigate up one level and then to the 'preparing_data' directory
+val: ../preparing_data/modified_test.txt  # path to validation data
+
+
+names:
+  - A1  # Class 0
+  - A2  # Class 1
+  - A3  # Class 2
+  - A4  # Class 3
+  - A5  # Class 4
+  - A6  # Class 5
+  - A7  # Class 6
+  - A8  # Class 7
+  - A9  # Class 8
+  - A10  # Class 9
+  - A11  # Class 10
+  - A12  # Class 11
+  - A13  # Class 12
+  - A14  # Class 13
+  - A15  # Class 14
+  - A16  # Class 15
+  - A17  # Class 16
+  - A18  # Class 17
+  - A19  # Class 18
+  - A20  # Class 19
