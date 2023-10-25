@@ -5,6 +5,7 @@
 ### 1. Using DVC (Recommended)
 1. Ensure DVC is installed. If not, install using `pip install dvc`.
 2. Run `DVC_data_setup.py` to set up the data.
+3. Run `unzip_data.py` to unzip the dataset.
 
 ### 1. Manual Data Setup (Alternative)
 1. Download your Kaggle API token from your Kaggle account page.
@@ -15,14 +16,15 @@
 
 ### 2. Preparing data
 1. Open folder `preparing_data`.
-2. Run `manual_size.py`.
-3. Run `convert_to_yolo.py`.
-4. Run `modifying_data.py`.
-
+2. Make sure Pillow is installed, if not, install using `pip install pillow`.
+3. Run `manual_size.py`.
+4. Run `convert_to_yolo.py`.
+   
 ### 3. Training the model
 1. Clone the YOLOv5 model: `git clone https://github.com/ultralytics/yolov5`.
-2. Run `pip install -qr requirements.txt comet_ml`.
-3. Run command `python train.py --img 640 --batch 16 --epochs 30 --data ../preparing_data/my_dataset.yaml --cfg yolov5s.yaml --weights yolov5s.pt --name my_model`.
+2. Go to the folder yolov5: `cd yolov5`.
+3. Run `pip install -qr requirements.txt comet_ml`.
+4. Run command `python train.py --img 640 --batch 16 --epochs 30 --data ../preparing_data/my_dataset.yaml --cfg yolov5s.yaml --weights yolov5s.pt --name my_model`.
 
 
 # Documenting my work:
