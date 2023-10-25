@@ -6,5 +6,5 @@ def modify_txt_file(input_filename, output_filename):
             outfile.write(modified_line)
 
 if __name__ == "__main__":
-    modify_txt_file("new_train.txt", "modified_train.txt")
-    modify_txt_file("new_test.txt", "modified_test.txt")
+    modify_txt_file("preparing_data/new_train.txt", "modified_train.txt")
+    modify_txt_file("preparing_data/new_test.txt", "modified_test.txt")
